@@ -1,0 +1,322 @@
+@font-face { font-family: 'bodoni';
+src: url('../Schriftarten/bodoni/BodoniFLF-Roman.ttf') format('truetype'); }
+
+@font-face { font-family: 'vonique';
+    src: url('../Schriftarten/vonique-64/Vonique-64.ttf') format('truetype'); }
+
+/* ### BODY ### */
+body {
+    box-sizing: border-box;
+    margin: 0;  
+}
+
+/* ### HEADER ### */
+header {
+    background-color: #F7F7F7;
+}
+/* ### LOGO ### */
+.logo {
+    font-family: "vonique";
+    font-size: 40px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #707070;
+    text-decoration: none;
+    margin: 2.5% 0;
+}
+
+
+/* ### TOPNAV ### */
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+  
+.searchTerm {
+    border: 1px solid grey;
+    border-right: none;
+    padding: 6.5px;
+}
+  
+.searchButton {
+    width: 40px;
+    height: 28px;
+    border: 1px solid grey;
+    padding: 2px 5px;
+    background: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.searchButton img {
+    height: 20px;
+    width: auto;
+}
+
+button, a {
+    background: none;
+    border: none;
+    cursor: pointer;  
+    padding: 0;
+}
+
+.nav-icons {
+    padding-top: 1%;
+}
+.icons {
+    height: 20px;
+    width: auto;
+    padding: 0 15px;  
+}
+
+.icons:last-child {
+    padding-right: 0;
+}
+
+/* ### SUBNAV ### */
+.subnav ul{
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1%;
+    list-style-type: none;
+}
+
+.subnav a{
+    font-family: "bodoni";
+    text-decoration: none;
+    color: #707070;
+    font-size: 17px;
+    position: relative;
+}
+
+.subnav ul:first-child {
+    padding-left: 0;
+}
+
+.subnav a:after {   
+    top:20px;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background:#707070;
+    transition: 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+ 
+
+/* ### MAIN ### */
+main { 
+    margin: 0 166px;
+    font-family: "bodoni";
+}
+
+/* ### HEADLINES ### */
+h3 {
+    color: #707070;
+    font-size: 25px;
+}
+h4 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+/* ### BANNER ### */
+
+.stage {
+    background-image: url("../Bilder/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+
+}
+
+.first-txt {
+    font-family: "bodoni";
+    text-align: center;
+    padding-top: 5%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0;
+}
+
+.second-txt-content {
+    display: flex;
+    justify-content: center;
+}
+.second-txt {
+    font-family: "bodoni";
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 20px;
+}
+.ice {
+    width: 50px;
+    height: auto;
+}
+
+.ice1 {
+    position: absolute; 
+    top: 22%;
+    left: 29%;
+}
+
+.ice2 {
+    position: absolute;
+    top: 22%;
+    right: 32%;
+}
+.ice3 {
+    position: absolute; 
+    top: 46%;
+    left: 32%;
+    width: 43px;
+}
+
+.sale-cnt {
+    position: relative; 
+    top: 10%;
+    left: 75%;
+    padding-bottom: 5%;  
+}
+
+.sale{
+    font-family: "bodoni";
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    position: absolute;
+    top: 15%;
+    left: 1%;
+}
+
+
+/* ### IMAGES ### */
+.watch, .necklace, .earring, .ring{
+    width: 236px;
+    height: auto;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+
+    transition: ease-in-out 1s;
+  
+}
+
+.watch:hover , .necklace:hover, .earring:hover, .ring:hover{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transform: scale(1.2, 1.2);
+    transition: ease-in-out 1s;
+}
+
+/* ### PRODUCT LIST ### */
+.bestseller, .neuheit{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.cnt-bestseller1, .cnt-bestseller2, .cnt-neuheit1, .cnt-neuheit2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    margin-left: 10%;
+}
+
+.txt-watch, .txt-crystal {
+    margin-right: 5%;
+}
+
+.shopping-icons {
+    float: right;
+    margin-top: 5%;
+}
+
+
+.shopping-icons svg {
+    padding: 15%;
+}
+
+
+/* ### SOCIAL MEDIA ### */
+.cnt-socialmedia {
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+    margin-top: 2%;
+}
+
+
+.social-media-wrap{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-media-wrap img {
+    padding: 0 15%;
+}
+
+/* ### FOOTER ### */
+footer {
+    background-color: black;
+    font-family: "bodoni";
+    padding: 1% 5%;
+    margin-top: 2%;
+}
+
+.cnt-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+}
+
+.cnt-footer ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.cnt-footer h4{
+    color: white;
+    font-size: 18px;
+}
+.cnt-footer ul{
+    padding: 0;
+}
+
+/* ### HIDDEN ### */
+.hidden {
+    visibility: hidden;
+    width: 292px;
+}
+
+
+           
+           
